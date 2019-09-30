@@ -6,6 +6,7 @@ API Reference
 
 method = POST
 URL = 'http://127.0.0.1:8000/emails/send_email/'
+
 data = {
 	'header': "", /заголовок
 	'content': "", /текст
@@ -27,6 +28,7 @@ json = {
 
 method = GET
 URL = 'http://127.0.0.1:8000/emails/sentbox/'
+
 data = {
 	'email_address': 'test@mail.ru' /email адрес юзера, чьи письма просматриваем
 }
@@ -43,6 +45,7 @@ json = [{'id': id_письма, 'header': заголовок_письма}, {'id
 
 method = GET
 URL = 'http://127.0.0.1:8000/emails/inbox/'
+
 data = {
 	'email_address': 'test@mail.ru' /email адрес юзера, чьи письма просматриваем
 }
